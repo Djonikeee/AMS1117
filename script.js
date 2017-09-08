@@ -10,7 +10,7 @@ function VCalculate()
             document.Vout.VoutResult.value='';
             return false;
         }
-    if (parseInt(document.Vout.Res1.value) < 75 && parseInt(document.Vout.Res1.value) > 270)
+    if (parseInt(document.Vout.Res1.value) < 75 || parseInt(document.Vout.Res1.value) > 270)
         {
             alert("Резистор R1 должен иметь сопротивление от 75 до 270 Ом");
             document.Vout.VoutResult.value='';
