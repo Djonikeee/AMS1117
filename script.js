@@ -15,7 +15,13 @@ function VCalculate()
             alert("Резистор R1 должен иметь сопротивление от 75 до 270 Ом");
             document.Vout.VoutResult.value='';
             return false;
-        }    
+        } 
+        if (parseInt(document.Vout.Res2.value) <= 0)
+            {
+                alert("Резистор R2 должен иметь сопротивление больше 0 Ом");
+                document.Vout.VoutResult.value='';
+                return false;
+            }    
     document.Vout.VoutResult.value = Vref*(1+(parseInt(document.Vout.Res2.value)/parseInt(document.Vout.Res1.value)))+(Iadj*parseInt(document.Vout.Res2.value));
     return true;
 }
