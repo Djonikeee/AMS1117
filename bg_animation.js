@@ -5,11 +5,11 @@ var h = canvasBody.height = window.innerHeight; //задается высота 
 
 var opts = {
     count: 10,
-    size: 20, //размер объектов в пикселах
+    size: 30, //размер объектов в пикселах
     sizeRandom: 20, //рандомное значение к размеру объектов (от 0 до 10)
-    spawnOpacity: 0.8, //прозрачность объектов 
+    spawnOpacity: 1, //прозрачность объектов 
     sparkLife: 0.2, //время жизни объекта
-    color: "rgba(39, 173, 96, alpha)" //цвет объектов
+    color: "rgba(38, 203, 251, alpha)" //цвет объектов
 };
 
 function anim(){
